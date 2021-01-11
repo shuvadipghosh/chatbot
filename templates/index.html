@@ -9,6 +9,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+</script>
 </head>
 
 <body>
@@ -28,8 +32,7 @@
         <form class="msger-inputarea">
           <div class="msg-info">
             <div class="msg-info-name">ChatBot</div>
-            <div class="msg-info-name">${name}</div>
-            <div class="msg-info-time">${formatDate(new Date())}</div>
+            <div><span id="datetime"></span></div>
           </div>
 
           <div class="msg-text">
