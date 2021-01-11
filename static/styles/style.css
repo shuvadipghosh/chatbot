@@ -150,5 +150,5 @@ body {
   background-color: #fcfcfe;
   background-image: url(./images/bkg.jpg);
   background-repeat: no-repeat;
-  background-size:auto;
+  background-position: center;
 }
